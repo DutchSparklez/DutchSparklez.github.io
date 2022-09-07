@@ -1,13 +1,31 @@
 /* Variables */
 :root {
     /* Color Variables */
-    --primary-color: gold;
     --secondairy-color: yellow;
+    --accent-color: goldenrod;
+    --primary-color: gold;
+    --link-color: black;
+
+    /* Others */
+    --accent-font-weight: 600;
 }
 
 /* Global Structure */
 body { 
+    font-family: sans-serif;
     margin: 0;
+}
+
+main, aside, footer {
+    padding: 1% 5%;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
 }
 
 /*  Navigation */
@@ -24,35 +42,76 @@ nav li {
 }
 
 nav a {
-    border-radius: 0 0 10px 10px;
-    border: 1px solid black;
     background-color: var(--primary-color);
+    border: 1px solid black;
+    color: var(--link-color);
     text-decoration: none;
     border-top: none;
     padding: 1rem 0;
     display: block;
-    color: black;
     height: 30px;
 }
 
-nav a:hover {
-    background-color: var(--secondairy-color);
-}
-
-nav a.active {
+nav a:hover, nav a:active {
     background-color: var(--secondairy-color);
 }
 
 /* Header */
+h1 {
+    color: var(--accent-color);
+    font-size: 5rem;
+}
 
 /* Main */
+main {
+    padding-bottom: 2%;
+    min-height: 75%;
+}
 
 /* Aside */
+aside {
+    border-top: 1px solid black;
+    background-color: var(--primary-color);
+    min-height: 100px;
+    display: flex;
+    /* flex: auto; */
+}
+
+aside section {
+    width: 50%;
+}
+
+aside ul {
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
 
 /* Footer */
+footer {
+    background-color: var(--primary-color);
+    font-weight: var(--accent-font-weight);
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+}
+
+footer p {
+    flex-grow: 2;
+}
+
+footer img {
+    height: 2rem;
+}
 
 /* Mobile */
 @media screen and (max-width: 768px) {
+    .left, .right {
+        display: block;   
+        width: 100%;
+        text-align: center;
+    }
+
     nav li {
         display: block;
         width: 100%;
@@ -65,5 +124,25 @@ nav a.active {
         padding: 1rem 0;
         border: 1px solid black;
         border-radius: 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    aside, footer {
+        display: block;
+    }
+
+    aside section {
+        width: 100%;
+    }
+
+    footer {
+        display: block;
     }
 }
