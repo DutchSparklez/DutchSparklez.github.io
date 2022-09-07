@@ -1,45 +1,57 @@
+/* Variables */
+:root {
+    /* Color Variables */
+    --primary-color: gold;
+    --secondairy-color: yellow;
+}
+
+/* Global Structure */
 body { 
     margin: 0;
 }
 
-/* Navigation */
+/*  Navigation */
 nav ul {
-    list-style-type: none;
     text-align: center;
     padding: 0;
     margin: 0;
 }
 
 nav li {
-    display: inline-block;
     vertical-align: middle;
-    width: 10%;
-    margin: 0 1%;
+    display: inline-block;
+    width: 15%;
 }
 
 nav a {
-    display: block;
-    padding: 1rem 0;
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    background-color: gold;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
     border-radius: 0 0 10px 10px;
-    color: black;
+    border: 1px solid black;
+    background-color: var(--primary-color);
     text-decoration: none;
+    border-top: none;
+    padding: 1rem 0;
+    display: block;
+    color: black;
+    height: 30px;
 }
 
 nav a:hover {
-    background-color: yellow;
+    background-color: var(--secondairy-color);
 }
 
 nav a.active {
-    background-color: goldenrod;
+    background-color: var(--secondairy-color);
 }
 
+/* Header */
+
+/* Main */
+
+/* Aside */
+
+/* Footer */
+
+/* Mobile */
 @media screen and (max-width: 768px) {
     nav li {
         display: block;
@@ -54,10 +66,4 @@ nav a.active {
         border: 1px solid black;
         border-radius: 0;
     }
-  }
-
-@media screen and (min-width: 992px) {
-    #somethingorother {
-      width: 480px ;
-    }
-  }
+}
