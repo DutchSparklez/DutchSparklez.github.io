@@ -16,23 +16,29 @@
 }
 
 /* Grid */
-[class*="col-"] {
-    display: block;
-    /* padding: 1rem; */
+.row {
+    display: flex;
+    gap: 1rem;
 }
 
-.col-1 { width: 5.83%;}
-.col-2 { width: 14.16%;}
-.col-3 { width: 22.5%; }
-.col-4 { width: 30.83%; }
-.col-5 { width: 39.16%; }
-.col-6 { width: 47.5%; }
+[class*="col-"] {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.col-1 { width: 8.33%;}
+.col-2 { width: 16.66%;}
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
 .col-7 { width: 55.83%; }
 .col-8 { width: 64.16%; }
 .col-9 { width: 72.5%; }
 .col-10 { width: 80.83%; }
-.col-11 { width: 89.16%; }
-.col-12 { width: 97.5%; }
+.col-11 { width: 81.66%; }
+.col-12 { width: 100%; }
 
 /* Global Structure */
 body { 
@@ -108,6 +114,18 @@ section {
     background-color: var(--primary-color);
 }
 
+.primairy-colored {
+    color: var(--primary-color);
+}
+
+.secondairy-colored {
+    color: var(--secondairy-color);
+}
+
+.tertairy-colored {
+    color: var(--tertairy-color)
+}
+
 /*  Navigation */
 nav ul {
     text-align: center;
@@ -181,8 +199,12 @@ footer img {
 /* Mobile */
 @media screen and (max-width: 768px) {
     /* Grid */
+    .row {
+        display: block;
+    }
+
     [class*="col-"] {
-        width: 93%;
+        width: 90%;
         display: block;
     }
 
