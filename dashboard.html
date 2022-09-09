@@ -1,96 +1,105 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="nl">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>My profile</title>
 
         <link rel="stylesheet" href="./style.css">
     </head>
 
     <body>
-        <body>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./profile.html">Persoonlijk Profiel</a></li>
-                    <li><a class="active" href="./dashboard.html">Studie Dashboard</a></li>
-                    <li><a href="./faq.html">Veelgestelde Vragen</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                </ul>
-            </nav>
-    
-            <header>
-                <h1>Dashboard</h1>
-            </header>
-    
-            <main>
-                <div class="row">
-                <section class="col-12 colored-box">
-                    <h2>Voortgang</h2>
-                    <p>
-                        Tijdens de studie kun je studiepunten (European Credits (ec)).
-                        Dit is mijn voortgang binnen het huidige jaar.
-                        Je krijgt een NBSA (Negatief Bindend StudieAdvies) als je minder dan 45 punten haalt.
-                        Als je NBSA hebt mag je niet verder de opleiding. In deze grafiek zie je:
-                        Mijn behaalde studiepunten <span class="primairy-colored">&#9632;</span>, 
-                        de NBSA-lijn (45 punten) <span class="secondairy-colored">&#9632;</span>
-                        en de propedeuse-lijn (60 punten) <span class="tertairy-colored">&#9632;</span>.
-                    </p>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./profile.html">Persoonlijk Profiel</a></li>
+                <li><a class="active" href="./dashboard.html">Studie Dashboard</a></li>
+                <li><a href="./faq.html">Veelgestelde Vragen</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+            </ul>
+        </nav>
 
-                    <div class="progress">
-                        <div class="maximum" style="width: calc(60 / 60 * 100%);"></div>
-                        <div class="minimum" style="width: calc(45 / 60 * 100%);"></div>
-                        <div class="completed" style="width: calc(0 / 60 * 100%);"></div>
-                    </div>
+        <header>
+            <h1>Dashboard</h1>
+        </header>
+
+        <main>
+            <div class="row">
+            <section class="col-12 colored-box">
+                <h2>Voortgang</h2>
+                <p>
+                    Tijdens de studie kun je studiepunten (European Credits (ec)).
+                    Dit is mijn voortgang binnen het huidige jaar.
+                    Je krijgt een NBSA (Negatief Bindend StudieAdvies) als je minder dan 45 punten haalt.
+                    Als je NBSA hebt mag je niet verder de opleiding. In deze grafiek zie je:
+                    Mijn behaalde studiepunten <span class="primairy-colored">&#9632;</span>, 
+                    de NBSA-lijn (45 punten) <span class="secondairy-colored">&#9632;</span>
+                    en de propedeuse-lijn (60 punten) <span class="tertairy-colored">&#9632;</span>.
+                </p>
+
+                <div class="progress">
+                    <div class="maximum" style="width: calc(60 / 60 * 100%);"></div>
+                    <div class="minimum" style="width: calc(45 / 60 * 100%);"></div>
+                    <div class="completed" style="width: calc(0 / 60 * 100%);"></div>
+                </div>
+            </section>
+        </div>
+            
+            <div class="row">
+                <section class="col-6 colored-box">
+                    <h2>Kwartaal 1</h2>
+                </section>
+
+                <section class="col-6 colored-box">
+                    <h2>Kwartaal 2</h2>
                 </section>
             </div>
-                
-                <div class="row">
-                    <section class="col-6 colored-box">
-                        <h2>Kwartaal 1</h2>
-                    </section>
+        </main>
+        
+        <aside>
+            <section class="left">
+                <h2>Persoonlijke Links</h2>
+                <ul>
+                    <li><a href="https://www.minecraft.net/nl-nl">Minecraft</a></li>
+                    <li><a href="https://docs.microsoft.com/nl-nl/training/">Microsoft Learn</a></li>
+                    <li><a href="https://www.nha.nl/">NHA</a></li>
+                    <li><a href="https://www.knvi.nl/">KNVI</a></li>
+                    <li><a href="https://www.linkedin.com/in/wesley-van-schaijk-76335bba/">LinkedIn</a></li>
+                    <li><a href="https://github.com/DutchSparklez/">Persoonlijke GitHub</a></li>
+                </ul>
+            </section>
 
-                    <section class="col-6 colored-box">
-                        <h2>Kwartaal 2</h2>
-                    </section>
-                </div>
-            </main>
-            
-            <aside>
-                <section class="left">
-                    <h2>Persoonlijke Links</h2>
-                    <ul>
-                        <li><a href="https://www.minecraft.net/nl-nl">Minecraft</a></li>
-                        <li><a href="https://docs.microsoft.com/nl-nl/training/">Microsoft Learn</a></li>
-                        <li><a href="https://www.nha.nl/">NHA</a></li>
-                        <li><a href="https://www.knvi.nl/">KNVI</a></li>
-                        <li><a href="https://www.linkedin.com/in/wesley-van-schaijk-76335bba/">LinkedIn</a></li>
-                        <li><a href="https://github.com/DutchSparklez/">Persoonlijke GitHub</a></li>
-                    </ul>
-                </section>
-    
-                <section class="right">
-                    <h2>Studie Links</h2>
-                    <ul>
-                        <li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/NL/5.-Onderwijs-examenregelingen/Onderwijs-en-examenregeling/OER-HZ-Bacheloropleiding-voltijd-2022-2023-DEF-13-juni.pdf">Onderwijs & Examenregelement</a></li>
-                        <li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf">Impelementatie Regelement</a></li>
-                        <li><a href="https://learn.hz.nl/">Learn</a></li>
-                        <li><a href="https://www.microsoft.com/nl-nl/microsoft-teams/log-in">Teams</a></li>
-                        <li><a href="https://hz.osiris-student.nl/">Studie Voortgang</a></li>
-                        <li><a href="https://github.com/HZ-HBO-ICT">Studie GitHub</a></li>
-                    </ul>
-                </section>
-            </aside>
-    
-            <footer>
-                <p class="left">Wesley van Schaijk</p>
-                <a class="right" href="https://hz.nl/">
-                    <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Logo Hogeschool Zeeland">
-                </a>
-            </footer>
-        </body>
+            <section class="right">
+                <h2>Studie Links</h2>
+                <ul>
+                    <li>
+                        <a 
+                            href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/NL/5.-Onderwijs-examenregelingen/Onderwijs-en-examenregeling/OER-HZ-Bacheloropleiding-voltijd-2022-2023-DEF-13-juni.pdf">'
+                                Onderwijs & Examenregelement
+                        </a>
+                    </li>
+
+                    <li>
+                        <a 
+                            href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf">
+                                Impelementatie Regelement
+                        </a>
+                    </li>
+
+                    <li><a href="https://learn.hz.nl/">Learn</a></li>
+                    <li><a href="https://www.microsoft.com/nl-nl/microsoft-teams/log-in">Teams</a></li>
+                    <li><a href="https://hz.osiris-student.nl/">Studie Voortgang</a></li>
+                    <li><a href="https://github.com/HZ-HBO-ICT">Studie GitHub</a></li>
+                </ul>
+            </section>
+        </aside>
+
+        <footer>
+            <p class="left">Wesley van Schaijk</p>
+            <a class="right" href="https://hz.nl/">
+                <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Logo Hogeschool Zeeland">
+            </a>
+        </footer>
     </body>
 </html>

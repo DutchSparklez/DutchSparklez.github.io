@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "development"
+  ],
+
+  // The line styles in this project are used to configure the width of the progressbar
+  // Currently in the ICT course, there is no better way provided and available to do this.
+  "hints": {
+    "no-inline-styles": "off"
+  }
+}
