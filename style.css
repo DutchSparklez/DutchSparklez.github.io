@@ -130,6 +130,29 @@ section {
   color: var(--tertairy-color);
 }
 
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid black;
+}
+
+thead th {
+  border-bottom: 2px solid black;
+}
+
+tfoot td {
+  border-top: 2px solid black;
+  font-weight: var(--accent-font-weight);
+}
+
+tr td:first-child {
+  width: 100%;
+}
+
 /*  Navigation */
 nav ul {
   text-align: center;
