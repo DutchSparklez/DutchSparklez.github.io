@@ -98,6 +98,14 @@ section {
   padding: 1rem;
 }
 
+.colored-box a {
+  color: var(--primary-color);
+}
+
+.colored-box a:hover {
+  color: var(--secondairy-color);
+}
+
 .colored-box h3 {
   margin: 0;
 }
@@ -145,6 +153,17 @@ table {
   border-collapse: collapse;
 }
 
+.overview-table {
+  margin: 0 auto;
+}
+
+.overview-table td,
+.overview-table th {
+  padding: 0.5rem;
+  padding-left: 1rem;
+  text-align: left;
+}
+
 td,
 th {
   border: 1px solid black;
@@ -159,7 +178,7 @@ tfoot td {
   font-weight: var(--accent-font-weight);
 }
 
-tr td:first-child {
+.spreadable-table tr td:first-child {
   width: 100%;
 }
 
