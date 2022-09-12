@@ -164,6 +164,13 @@ table {
   text-align: left;
 }
 
+.post-table,
+.post-table th,
+.post-table td {
+  border: 0;
+  padding: 0 1rem;
+}
+
 img {
   width: 100%;
   margin-top: 1em;
