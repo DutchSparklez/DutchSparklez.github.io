@@ -181,6 +181,10 @@ img {
   overflow-x: scroll;
 }
 
+article {
+  margin: 1rem 0;
+}
+
 td,
 th {
   border: 1px solid black;
@@ -262,6 +266,7 @@ footer {
   flex-direction: row;
   display: flex;
   flex: auto;
+  border-bottom: 1px solid black;
 }
 
 footer p {
