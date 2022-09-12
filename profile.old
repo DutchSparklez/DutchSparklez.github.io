@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wesley van Schaijk - Profiel</title>
+
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a class="active">Persoonlijk Profiel</a></li>
+                <li><a href="./dashboard.html">Studie Dashboard</a></li>
+                <li><a href="./faq.html">Veelgestelde Vragen</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+        <h1>Profiel</h1>
+
+        <main>
+            <section>
+                <h3>Vooropleiding</h3> 
+                <ul>
+                    <li>VMBO GL @ Stedelijk Dalton Lyceum</li>
+                    <li>HAVO E&M @ Stedelijk Dalton Lyceum</li>
+                    <li>Informatica @ Hogeschool Rotterdam (Gestopt na jaar 2)</li>
+                    <li>Onderwijsassistent @ LOI</li>
+                    <li>Verkoopmedewerker @ ROC Tilburg (Gestopt na periode 2)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Studiekeuze</h3>
+                <p>
+                    In 2016 ben ik begonnen met de opleiding informatica aan de Hogeschool Rotterdam, vanwege persoonlijke redenen ben ik hier uiteindelijk gestopt. Nu alles weer op orde is wil ik opnieuw beginnen met een vergelijkbare opleiding op een andere school.
+                </p>
+            </section>
+
+            <section>
+                <h3>Toekomst</h3>
+                <p>
+                    Ik zit te twijfelen of ik na mijn opleiding een master wilt doen of aan het werk wil. Data Science heeft een grote voorkeur net als software architecteur. Ik hou van nadenken op zowel hoog als laag niveau. Ik hoop tijdens de opleiding hier een mooite balans in te krijgen.
+                </p>
+            </section>
+
+            <section>
+                <h3>SWOT</h3>
+                <table>
+                    <tr>
+                        <th>Sterke punten</th>
+                        <th>Valkuilen</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Snel leren, sociaal, geörganiseerd, uitdaging creëren. Als ik een onderwerp krijg dan ga ik mezelf verdiepen en alles tot de bodem uitzoeken.
+                        </td>
+                        <td>
+                            Te behulpzaam, laag vertrouwen in eigen werk. Ik help graag mensen, dat was mijn werk op HRO, maar ik vergeet dan vaak mijn eigen werk, ook omdat ik dit snel als ondergeschikt zie.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Kansen</th>
+                        <th>Risico's</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Groepsdynamica. Op de HRO had ik geen regeling getroffen met werk wat mede tot mijn uitschakeling zorgde, nu wil ik dat anders doen.
+                        </td>
+                        <td>
+                            Overwerken, geen nee kunnen zeggen. Zie weaknesses + als mensen mij vragen om iets te doen is het antwoord automatisch ja, of ik nou tijd heb of niet.
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h3>Bijbaan & Vrije Tijd</h3>
+                <p>
+                    Op het moment van schrijven ben ik assistent filiaalleider bij Aldi voor 32 uur. Het is al besproken dat dit vanaf 29 augustus terug gaat naar 8 zodat ik de hele week voor mijn studie heb. Mijn studie wil ik vooral op school doen, zodra ik thuis ben ga ik voor mezelf aan de slag met koken, gamen of een filmpje kijken. 
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p style="color: red;">Kijk het is veranderd!</p>
+        </footer>
+    </body>
+</html>
