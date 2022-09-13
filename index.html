@@ -4,15 +4,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My profile</title>
 
-        <link rel="stylesheet" href="./style.css">
+        <title>Wesley van Schaijk - Home</title>
+
+        <link rel="stylesheet" href="./resources/css/main.css">
+        <link rel="stylesheet" href="./resources/css/posts.css">
     </head>
 
     <body>
         <nav>
             <ul>
-                <li><a class="active">Home</a></li>
+                <li><a href="./" class="active">Home</a></li>
                 <li><a href="./profile.html">Persoonlijk Profiel</a></li>
                 <li><a href="./dashboard">Studie Dashboard</a></li>
                 <li><a href="./faq.html">Veelgestelde Vragen</a></li>
@@ -22,37 +24,69 @@
 
         <header>
             <h1>Home</h1>
-            
-            <div class="row">
-                <div class="col-2">
-                    <img src="https://via.placeholder.com/250x250" alt="Placeholder">
-                </div>
-    
-                <div class="col-10">
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quas autem cumque necessitatibus ea, provident mollitia! At tenetur tempora dolorem, ad totam explicabo nobis aliquam recusandae consectetur aut in voluptatum, delectus alias nulla magni sapiente provident eaque reprehenderit nesciunt sint enim quam corporis officia. Eum, nobis. Ut laudantium illum nesciunt consectetur dolores quia minima dolore ea omnis nam. Reprehenderit in enim rem expedita officiis fuga, veritatis eveniet blanditiis id a distinctio perferendis assumenda! Dolorem accusamus dicta eius, voluptatum accusantium magnam expedita facilis harum voluptate non culpa saepe quo, tenetur, distinctio sed vel pariatur incidunt nulla sit illum. Ratione, in minima.
-                    </p>
-                </div>
-            </div>
         </header>
 
         <main>
+            <section class="row">            
+                <p class="col-6">
+                    Mijn naam is Wesley van Schaijk, hierbij heet ik je van harte welkom op mijn persoonlijke website.
+                    Hier kun je informatie vinden over mijn studie en mijn professionele leven. Eerst een korte introductie:
+                    ik ben geboren in Dordrecht en ben dit jaar (2022) begonnen aan de opleiding HBO ICT-B aan de Hogeschool
+                    Zeeland. Momenteel ben ik assistent filiaalleider bij Aldi en speel ik in mijn vrije tijd graag
+                    Minecraft.
+                </p>
+            
+                <p class="col-6">
+                    Houd er rekening mee dat deze website bedoeld is om tijdens mijn opleiding verder te ontwikkelen. Niet alles
+                    zal werken zoals het moet of zoals het kan als we dat punt nog niet hebben bereikt binnen de opleiding.
+                    Daarnaast zal ik concepten proberen die geen onderdeel zijn van het curriculum, denk bijvoorbeeld aan
+                    webscraping. Hier zal ik het t.z.t. over hebben in mijn blog.
+                </p>
+            </section>
+
             <section>
+                <h2>Mijn Weetjes</h2>
                 <div class="row">
                     <div class="col-8 colored-box">
-                        Hello
+                        <h3>Karakter</h3>
+                        <p>
+                            Behulpzaamheid, geduld en gemotiveerd. Dat zijn de drie belangrijkste kenmerken
+                            die mij beschrijven. Dankzij mijn achtergrond in onderwijs en IT komen deze eigenschappen
+                            extra naar boven.
+                        </p>
                     </div>
                     <div class="col-4 colored-box">
-                        Hello
+                        <h3>Hobbies</h3>
+                        <ul>
+                            <li>Minecraft</li>
+                            <li>Pokémon</li>
+                            <li>YouTube/Twitch</li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-3 colored-box">
-                        Hello
+                        <img class="boxed-image" src="./resources/img/me.jpg" alt="Wesley van Schaijk">
                     </div>
+                    
                     <div class="col-9 colored-box">
-                        Hello
+                        <h3>Profiel</h3>
+                        
+                        <p>
+                            Geboren in Dordrecht, 24 jaar oud en een genieter. Dat is hoe ik mezelf zou omschrijven
+                            aan iemand die mij niet kent. Alle dingen in het leven zijn leuk te maken als je er maar
+                            met de juiste instelling ingaat. Dit kwam niet natuurlijk, het heeft veel vallen en opstaan
+                            gekost om tot die conclusie te komen.
+                        </p>
+
+                        <p>
+                            Neem een kijkje op mijn profiel en ontdek meer over hoe ik tot mijn huidige ik ben gekomen.
+                        </p>
+
+                        <a href="./profile.html">
+                            <button type="button">Lees meer...</button>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -60,25 +94,30 @@
             <section>
                 <h2>Voorgestelde Posts</h2>
                 <table class="post-table">
-                    <!-- Table for highlighted articles -->
-                    <!-- Picture (2r) - Title (1r) + desc (1r) - Button (2r) -->
                     <tbody>
                         <tr>
-                            <td rowspan="2">
-                                <img src="https://via.placeholder.com/150x150" alt="Placeholder" class="display: inline-block;">
-                            </td>
-
-                            <td colspan="2">
-                                <h3>Artikel Titel</h3>
+                            <td>
+                                <h3 class="post-table-title">Online Company Safari</h3>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam laudantium at odio maxime molestias, ratione nulla eum corrupti corporis?
+                                <p>
+                                    Tijdens de eerste van mijn opleiding aan de Hogeschool Zeeland heb ik de opdracht
+                                    gekregen om op zoek te gaan naar verschillende bedrijven in het werkveld. De opdracht
+                                    heeft als doel om informatie te verkrijgen over wat je mogelijk later in het werkveld
+                                    zou willen bereiken, en om rond te sneuvelen naar de hoeveelheid bedrijven die er zijn.
+                                </p>
                             </td>
+                        </tr>
 
-                            <td><button>Meer informatie</button></td>
+                        <tr>
+                            <td>
+                                <a href="./blog/online-company-safari.html">
+                                    <button type="button" name="verder-lezen">Verder lezen...</button>
+                                </a>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -89,12 +128,12 @@
             <section class="left">
                 <h2>Persoonlijke Links</h2>
                 <ul>
-                    <li><a href="https://www.minecraft.net/nl-nl">Minecraft</a></li>
-                    <li><a href="https://docs.microsoft.com/nl-nl/training/">Microsoft Learn</a></li>
-                    <li><a href="https://www.nha.nl/">NHA</a></li>
-                    <li><a href="https://www.knvi.nl/">KNVI</a></li>
-                    <li><a href="https://www.linkedin.com/in/wesley-van-schaijk-76335bba/">LinkedIn</a></li>
-                    <li><a href="https://github.com/DutchSparklez/">Persoonlijke GitHub</a></li>
+                    <li><a href="https://www.minecraft.net/nl-nl" target="_blank" rel="noopener">Minecraft</a></li>
+                    <li><a href="https://docs.microsoft.com/nl-nl/training/" target="_blank" rel="noopener">Microsoft Learn</a></li>
+                    <li><a href="https://www.nha.nl/" target="_blank" rel="noopener">NHA</a></li>
+                    <li><a href="https://www.knvi.nl/" target="_blank" rel="noopener">KNVI</a></li>
+                    <li><a href="https://www.linkedin.com/in/wesley-van-schaijk-76335bba/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://github.com/DutchSparklez/" target="_blank" rel="noopener">Persoonlijke GitHub</a></li>
                 </ul>
             </section>
 
@@ -103,30 +142,33 @@
                 <ul>
                     <li>
                         <a 
-                            href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/NL/5.-Onderwijs-examenregelingen/Onderwijs-en-examenregeling/OER-HZ-Bacheloropleiding-voltijd-2022-2023-DEF-13-juni.pdf">'
+                            href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/NL/5.-Onderwijs-examenregelingen/Onderwijs-en-examenregeling/OER-HZ-Bacheloropleiding-voltijd-2022-2023-DEF-13-juni.pdf"
+                            target="_blank"
+                            rel="noopener">
                                 Onderwijs & Examenregelement
                         </a>
                     </li>
 
                     <li>
                         <a 
-                            href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf">
+                            href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf"
+                            target="_blank"
+                            rel="noopener">
                                 Impelementatie Regelement
                         </a>
                     </li>
 
-                    <li><a href="https://learn.hz.nl/">Learn</a></li>
-                    <li><a href="https://www.microsoft.com/nl-nl/microsoft-teams/log-in">Teams</a></li>
-                    <li><a href="https://hz.osiris-student.nl/">Studie Voortgang</a></li>
-                    <li><a href="https://github.com/HZ-HBO-ICT">Studie GitHub</a></li>
+                    <li><a href="https://learn.hz.nl/" target="_blank" rel="noopener">Learn</a></li>
+                    <li><a href="https://www.microsoft.com/nl-nl/microsoft-teams/log-in" target="_blank" rel="noopener">Teams</a></li>
+                    <li><a href="https://hz.osiris-student.nl/" target="_blank" rel="noopener">Studie Voortgang</a></li>
+                    <li><a href="https://github.com/HZ-HBO-ICT" target="_blank" rel="noopener">Studie GitHub</a></li>
                 </ul>
             </section>
         </aside>
 
         <footer>
-            <p class="left">Wesley van Schaijk</p>
-            <a class="right" href="https://hz.nl/">
-                <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Logo Hogeschool Zeeland">
+            <a href="https://hz.nl/">
+                <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Hogeschool Zeeland">
             </a>
         </footer>
     </body>
