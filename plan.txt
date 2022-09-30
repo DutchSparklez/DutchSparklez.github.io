@@ -1,0 +1,118 @@
+==================
+|   Guidelines   |
+==================
+
+Voor de guidelines volg de instructies op van W3C Web Accessiblity Iniative.
+De instructies zijn terug te vinden via de onderstaande links, maar ik beschrijf ze ook hier.
+https://www.w3.org/WAI/standards-guidelines/wcag/glance/
+
+Perceivable
+* Aria-labelledby to provide text alternatives for non-text content
+* Name property for non-text items
+* Alt attribute for img elements
+* Provide text-alernative voor media-content
+* Use ARIA landmarks to identify regions of a page
+* Use the role attribute to indentify headings
+* Aria-label for link purpose
+
+Operable
+* Navigatable using keyboard
+
+Understandable
+* Readable
+* Simple language
+
+Robust
+* Name, role & value attributes.
+
+============
+|   Code   |
+============
+
+Voor de standaard waaraan ik mijn code ga houden refereer ik naar de W3Schools .
+Er zijn twee instructies die ik belangrijk vind: HTML Semantics & HTML Style Guide
+https://www.w3schools.com/html/html5_semantic_elements.asp
+https://www.w3schools.com/html/html5_syntax.asp
+
+Semantics
+* article
+* aside
+* details
+* figcaption
+* figure
+* footer
+* header
+* main
+* mark
+* nav
+* section
+* summary
+* summary
+* time
+
+Style
+* declare document type
+* lowercase element names
+* close all elements
+* lowercase attribute names
+* always qoute attribute value
+* specify alt, width and height for images
+* spaceless equal signs for attributes
+* length of code less than 140
+* seperate blocks of code use enter
+* two spaces of indent
+* title element
+* use html, head and body elements
+* use lang attribute for html
+* meta data for charset, viewport
+
+
+Voor CSS gebruik ik de volgende guidelines van CodeGuide
+https://codeguide.co/#css
+
+* two spaces indents
+* new line per selector
+* space before opening brace
+* closing brace on new line
+* include space after :
+* decleration on own line
+* sigle declerations can be single lined.
+* everything ends with ;
+* include a space after , in property values
+* space seperated color properties
+* use .5 instead of 0.5
+* lowercase hex-values, shorthand if possible, name of color even better
+* qoute attribute values
+* no units for 0.
+
+* declare order: position, boxmodel, typography, visual, misc
+* logical properties (inline instead of 0 auto)
+* media queries as close behind the relevant parts as possible
+* avoid shorthand when not necessary
+* prefer > for selecting children
+
+* dash lower case classnames
+* no shortening of words
+* meaningfull
+* prefixes based on closest parent
+
+* break files up into components, not pages
+* lower case files
+
+===========
+|   SEO   |
+===========
+
+Voor Search Engine Optimization ga ik gebruik maken van de guidelines van Google.
+Zij hebben op hun developer hub een starter guide voor SEO optimalization.
+https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+
+* Clear and unique titles for each page.
+* meta description tag
+& navigition is important
+* breadcrumps
+* usefull 404 page
+* friendly urls
+* clear button texts and anchor
+* use no-follow for links that go external
+* good names
