@@ -116,3 +116,15 @@ https://developers.google.com/search/docs/fundamentals/seo-starter-guide
 * clear button texts and anchor
 * use no-follow for links that go external
 * good names
+
+======================
+|	Adaptability   |
+======================
+
+Een willekeurig persoon op het internet heeft een blogpost over adaptibility.
+https://blog.logrocket.com/a-guide-to-improving-web-accessibility-with-css/
+
+* Using the 'rem' unit for font
+* Using 'vw' en 'vh' voor layout styling, % for subboxes.
+* prefers-color-scheme voor het veranderen tussen dark en light mode.
+* prefers-contrast voor mensen die dat fijn vinden

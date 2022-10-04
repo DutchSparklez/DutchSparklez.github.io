@@ -1,0 +1,184 @@
+/* ************** *
+ * Color settings *
+ * ************** */
+
+:root {
+  /* Color Variables */
+  --background-color: ivory;
+  --primary-color: gold;
+  --secondairy-color: yellow;
+  --tertairy-color: darkkhaki;
+  --accent-color: goldenrod;
+  --text-color: black;
+  --link-color: var(--accent-color);
+  --alternate-link-color: var(--text-color);
+  --link-highlight-color: var(--tertairy-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Color Variables */
+    --background-color: dimgrey;
+    --primary-color: darkkhaki;
+    --secondairy-color: gold;
+    --tertairy-color: yellow;
+    --accent-color: goldenrod;
+    --text-color: white;
+    --link-color: var(--accent-color);
+    --alternate-link-color: var(--primary-color);
+    --link-highlight-color: var(--tertairy-color);
+  }
+}
+
+@media (prefers-contrast) {
+  :root {
+    /* Color Variables */
+    --primary-color: var(--background-color);
+    --secondairy-color: var(--background-color);
+    --tertairy-color: var(--secondairy-color);
+    --accent-color: var(--secondairy-color);
+  }
+}
+
+/* ************* *
+ * Basis Styling *
+ * ************* */
+
+/* General */
+body {
+  margin: 0;
+  padding-inline: 1vw;
+  font-family: sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  max-width: 1250px;
+  margin-inline: auto;
+}
+
+footer {
+  text-align: center;
+}
+
+h1,
+h2,
+.centered {
+  text-align: center;
+}
+
+a {
+  color: var(--link-color);
+}
+
+p {
+  text-align: justify;
+}
+
+/* Navigation */
+#show-nav-button {
+  display: none;
+  border: 1px solid black;
+  color: var(--text-color);
+  font-family: inherit;
+  width: 100%;
+  margin-top: 1vh;
+  padding-block: 15px;
+  background-color: var(--primary-color);
+}
+
+#show-nav-button:hover {
+  cursor: pointer;
+  color: var(--link-highlight-color);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  vertical-align: middle;
+  display: inline-block;
+  width: 15%;
+}
+
+nav a {
+  display: block;
+  border: 1px solid black;
+  border-top: none;
+  padding-block: 15px;
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: var(--primary-color);
+  height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  #show-nav-button {
+    display: block;
+  }
+
+  nav li {
+    display: none;
+    padding: 2px 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  nav li.visible {
+    display: block;
+  }
+
+  nav a {
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 1rem 0;
+  }
+}
+
+/* Aside */
+aside section {
+  width: 100%;
+}
+
+aside section ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+/* Customs */
+.collumned {
+  display: flex;
+  gap: 1vh;
+  margin-block: 1vh;
+}
+
+.colored-box {
+  background-color: var(--primary-color);
+  border: 1px solid black;
+  padding: 1vh;
+  margin-block: 1vh;
+}
+
+.colored-box a {
+  color: var(--alternate-link-color);
+}
+
+@media screen and (max-width: 768px) {
+  .collumned {
+    display: block;
+  }
+}
+
+/* Selectors */
+a:hover {
+  color: var(--link-highlight-color);
+}

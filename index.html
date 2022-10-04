@@ -4,17 +4,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Wesley van Schaijk, een enthousiaste programmeur met een passie van low-level code.">
 
-        <title>Wesley van Schaijk - Home</title>
+        <title>Home - Wesley van Schaijk</title>
 
-        <link rel="stylesheet" href="./resources/css/main.css">
-        <link rel="stylesheet" href="./resources/css/posts.css">
+        <link rel="stylesheet" href="./resources/css/style.css">
     </head>
 
     <body>
         <nav>
+            <button id="show-nav-button">Toon navigatie</button> 
             <ul>
-                <li><a href="./" class="active">Home</a></li>
+                <li><a href="./">Home</a></li>
                 <li><a href="./profile.html">Persoonlijk Profiel</a></li>
                 <li><a href="./dashboard">Studie Dashboard</a></li>
                 <li><a href="./faq.html">Veelgestelde Vragen</a></li>
@@ -27,8 +28,8 @@
         </header>
 
         <main>
-            <section class="row">            
-                <p class="col-6">
+            <section class="collumned ">            
+                <p>
                     Mijn naam is Wesley van Schaijk, hierbij heet ik je van harte welkom op mijn persoonlijke website.
                     Hier kun je informatie vinden over mijn studie en mijn professionele leven. Eerst een korte introductie:
                     ik ben geboren in Dordrecht en ben dit jaar (2022) begonnen aan de opleiding HBO ICT-B aan de Hogeschool
@@ -36,7 +37,7 @@
                     Minecraft.
                 </p>
             
-                <p class="col-6">
+                <p>
                     Houd er rekening mee dat deze website bedoeld is om tijdens mijn opleiding verder te ontwikkelen. Niet alles
                     zal werken zoals het moet of zoals het kan als we dat punt nog niet hebben bereikt binnen de opleiding.
                     Daarnaast zal ik concepten proberen die geen onderdeel zijn van het curriculum, denk bijvoorbeeld aan
@@ -46,8 +47,8 @@
 
             <section>
                 <h2>Mijn Weetjes</h2>
-                <div class="row">
-                    <div class="col-8 colored-box">
+                <div class="collumned">
+                    <div class="colored-box">
                         <h3>Karakter</h3>
                         <p>
                             Behulpzaamheid, geduld en gemotiveerd. Dat zijn de drie belangrijkste kenmerken
@@ -55,7 +56,8 @@
                             extra naar boven.
                         </p>
                     </div>
-                    <div class="col-4 colored-box">
+
+                    <div class="colored-box">
                         <h3>Hobbies</h3>
                         <ul>
                             <li>Minecraft</li>
@@ -65,12 +67,12 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-3 colored-box">
-                        <img class="boxed-image" src="./resources/img/me.jpg" alt="Wesley van Schaijk">
+                <div class="collumned">
+                    <div class="colored-box centered">
+                        <img src="./resources/img/me.jpg" alt="Foto van Wesley van Schaijk" width="400" height="400">
                     </div>
                     
-                    <div class="col-9 colored-box">
+                    <div class="colored-box">
                         <h3>Profiel</h3>
                         
                         <p>
@@ -84,20 +86,18 @@
                             Neem een kijkje op mijn profiel en ontdek meer over hoe ik tot mijn huidige ik ben gekomen.
                         </p>
 
-                        <a href="./profile.html">
-                            <button type="button">Lees meer...</button>
-                        </a>
+                        <a href="./profile.html">Bekijk mijn volledige profiel</a>
                     </div>
                 </div>
             </section>
 
             <section>
                 <h2>Voorgestelde Posts</h2>
-                <table class="post-table">
+                <table class="colored-box">
                     <tbody>
                         <tr>
                             <td>
-                                <h3 class="post-table-title">Online Company Safari</h3>
+                                <h3>Online Company Safari</h3>
                             </td>
                         </tr>
 
@@ -114,9 +114,7 @@
 
                         <tr>
                             <td>
-                                <a href="./blog/online-company-safari.html">
-                                    <button type="button" name="verder-lezen">Verder lezen...</button>
-                                </a>
+                                <a href="./blog/online-company-safari.html">Verder lezen</a>
                             </td>
                         </tr>
                     </tbody>
@@ -124,8 +122,8 @@
             </section>
         </main>
         
-        <aside>
-            <section class="left">
+        <aside class="collumned" >
+            <section>
                 <h2>Persoonlijke Links</h2>
                 <ul>
                     <li><a href="https://www.minecraft.net/nl-nl" target="_blank" rel="noopener">Minecraft</a></li>
@@ -137,7 +135,7 @@
                 </ul>
             </section>
 
-            <section class="right">
+            <section>
                 <h2>Studie Links</h2>
                 <ul>
                     <li>
@@ -168,8 +166,10 @@
 
         <footer>
             <a href="https://hz.nl/">
-                <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Hogeschool Zeeland">
+                <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Logo Hogeschool Zeeland" width="200" height="75">
             </a>
         </footer>
+
+        <script src="./resources/js/actions.js"></script>
     </body>
 </html>
