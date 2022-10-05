@@ -83,17 +83,6 @@ p {
   text-align: justify;
 }
 
-table {
-  border: 2px solid var(--text-color);
-  border-collapse: collapse;
-}
-
-td,
-th {
-  border: 1px solid var(--text-color);
-  padding: 1vw;
-}
-
 /* Navigation */
 #show-nav-button {
   display: none;
@@ -194,6 +183,17 @@ aside section ul {
 
 .centered img {
   border: 1px solid var(--text-color);
+}
+
+.spreadable-table {
+  border: 2px solid var(--text-color);
+  border-collapse: collapse;
+}
+
+.spreadable-table td,
+.spreadable-table th {
+  border: 1px solid var(--text-color);
+  padding: 1vw;
 }
 
 .spreadable-table tr td:first-child {
