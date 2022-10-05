@@ -176,6 +176,10 @@ aside section ul {
   .collumned {
     display: block;
   }
+
+  .centered img {
+    width: 100%;
+  }
 }
 
 /* Selectors */
