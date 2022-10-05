@@ -106,7 +106,7 @@ nav ul {
 nav li {
   vertical-align: middle;
   display: inline-block;
-  width: 15%;
+  width: 18%;
 }
 
 nav a {
@@ -170,6 +170,10 @@ aside section ul {
 
 .colored-box a {
   color: var(--alternate-link-color);
+}
+
+.centered img {
+  border: 1px solid black;
 }
 
 @media screen and (max-width: 768px) {

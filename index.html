@@ -9,17 +9,18 @@
         <title>Home - Wesley van Schaijk</title>
 
         <link rel="stylesheet" href="./resources/css/style.css">
+        <script src="https://kit.fontawesome.com/403fce4613.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <nav>
             <button id="show-nav-button">Toon navigatie</button> 
             <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="./profile.html">Persoonlijk Profiel</a></li>
-                <li><a href="./dashboard">Studie Dashboard</a></li>
-                <li><a href="./faq.html">Veelgestelde Vragen</a></li>
-                <li><a href="./blog">Blog</a></li>
+                <li><a href="./"><i class="fa-solid fa-house-user"></i> Home</a></li>
+                <li><a href="./profile.html"><i class="fa-solid fa-user"></i> Persoonlijk Profiel</a></li>
+                <li><a href="./dashboard"><i class="fa-solid fa-gauge"></i> Studie Dashboard</a></li>
+                <li><a href="./faq.html"><i class="fa-solid fa-question"></i> Veelgestelde Vragen</a></li>
+                <li><a href="./blog"><i class="fa-brands fa-blogger"></i> Blog</a></li>
             </ul>
         </nav>
 
@@ -28,7 +29,7 @@
         </header>
 
         <main>
-            <section class="collumned ">            
+            <section class="collumned" aria-label="Website introduction">
                 <p>
                     Mijn naam is Wesley van Schaijk, hierbij heet ik je van harte welkom op mijn persoonlijke website.
                     Hier kun je informatie vinden over mijn studie en mijn professionele leven. Eerst een korte introductie:
@@ -45,8 +46,8 @@
                 </p>
             </section>
 
-            <section>
-                <h2>Mijn Weetjes</h2>
+            <section aria-labelledby="facts-header">
+                <h2 id="facts-header">Mijn Weetjes</h2>
                 <div class="collumned">
                     <div class="colored-box">
                         <h3>Karakter</h3>
@@ -69,7 +70,10 @@
 
                 <div class="collumned">
                     <div class="colored-box centered">
-                        <img src="./resources/img/me.jpg" alt="Foto van Wesley van Schaijk" width="400" height="400">
+                        <figure name="Foto Wesley van Schaijk">
+                            <img src="./resources/img/me.jpg" alt="Foto van Wesley van Schaijk" width="400" height="400">
+                            <figcaption>Een foto van Wesley van Schaijk</figcaption>
+                        </figure>
                     </div>
                     
                     <div class="colored-box">
@@ -91,8 +95,8 @@
                 </div>
             </section>
 
-            <section>
-                <h2>Voorgestelde Posts</h2>
+            <section aria-labelledby="postlist-header">
+                <h2 id="postlist-header">Voorgestelde Posts</h2>
                 <table class="colored-box">
                     <tbody>
                         <tr>
@@ -122,7 +126,7 @@
             </section>
         </main>
         
-        <aside class="collumned" >
+        <aside class="collumned" role="complementary">
             <section>
                 <h2>Persoonlijke Links</h2>
                 <ul>
@@ -166,7 +170,10 @@
 
         <footer>
             <a href="https://hz.nl/">
-                <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Logo Hogeschool Zeeland" width="200" height="75">
+                <figure name="Logo Hogeschool Zeeland">
+                    <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Logo Hogeschool Zeeland" width="200" height="75">
+                    <figcaption>Het logo van de Hogeschool Zeeland</figcaption>
+                </figure>
             </a>
         </footer>
 

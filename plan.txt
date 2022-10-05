@@ -12,11 +12,7 @@ Perceivable
 * Alt attribute for img elements
 * Provide text-alernative voor media-content
 * Use ARIA landmarks to identify regions of a page
-* Use the role attribute to indentify headings
-* Aria-label for link purpose
-
-Operable
-* Navigatable using keyboard
+* Use the role attribute to indentify headings 
 
 Understandable
 * Readable
@@ -47,8 +43,7 @@ Semantics
 * nav
 * section
 * summary
-* summary
-* time
+* time 
 
 Style
 * declare document type
@@ -60,17 +55,15 @@ Style
 * spaceless equal signs for attributes
 * length of code less than 140
 * seperate blocks of code use enter
-* two spaces of indent
 * title element
 * use html, head and body elements
 * use lang attribute for html
-* meta data for charset, viewport
+* meta data for charset, viewport, description
 
 
 Voor CSS gebruik ik de volgende guidelines van CodeGuide
 https://codeguide.co/#css
 
-* two spaces indents
 * new line per selector
 * space before opening brace
 * closing brace on new line
@@ -109,9 +102,7 @@ https://developers.google.com/search/docs/fundamentals/seo-starter-guide
 
 * Clear and unique titles for each page.
 * meta description tag
-& navigition is important
 * breadcrumps
-* usefull 404 page
 * friendly urls
 * clear button texts and anchor
 * use no-follow for links that go external
