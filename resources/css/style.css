@@ -161,7 +161,6 @@ aside section ul {
 .collumned {
   display: flex;
   gap: 1vh;
-  flex-basis: 0;
   margin-block: 1vh;
 }
 
@@ -174,7 +173,6 @@ aside section ul {
   border: 1px solid var(--text-color);
   padding: 1vh;
   margin-block: 1vh;
-  width: 100%;
 }
 
 .colored-box a {
@@ -196,13 +194,18 @@ aside section ul {
   padding: 1vw;
 }
 
-.spreadable-table tr td:first-child {
+.spreadable-table tr td:first-child,
+.full-width {
   width: 100%;
 }
 
 @media screen and (max-width: 768px) {
   .collumned {
     display: block;
+  }
+
+  .full-width {
+    width: auto;
   }
 
   .centered img {
