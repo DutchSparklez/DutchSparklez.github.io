@@ -4,19 +4,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wesley van Schaijk - Studie Dashboard</title>
+        <meta name="description" content="Wesley's voortgang tijdens zijn studie aan de Hogeschool Zeeland.">
 
-        <link rel="stylesheet" href="../resources/css/main.css">
+        <title>Studie Dashboard - Wesley van Schaijk</title>
+
+        <link rel="stylesheet" href="../resources/css/style.css">
+        <script src="https://kit.fontawesome.com/403fce4613.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <nav>
+            <button type="button" id="show-nav-button">Toon navigatie</button> 
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../profile.html">Persoonlijk Profiel</a></li>
-                <li><a href="./" class="active">Studie Dashboard</a></li>
-                <li><a href="../faq.html">Veelgestelde Vragen</a></li>
-                <li><a href="../blog/">Blog</a></li>
+                <li><a href="../"><i class="fa-solid fa-house-user"></i> Home</a></li>
+                <li><a href="../profile.html"><i class="fa-solid fa-user"></i> Persoonlijk Profiel</a></li>
+                <li><a href="./dashboard"><i class="fa-solid fa-gauge"></i> Studie Dashboard</a></li>
+                <li><a href="../faq.html"><i class="fa-solid fa-question"></i> Veelgestelde Vragen</a></li>
+                <li><a href="../blog"><i class="fa-brands fa-blogger"></i> Blog</a></li>
             </ul>
         </nav>
 
@@ -35,8 +39,8 @@
         </header>
 
         <main>
-            <section>
-                <h2>Jaar 1</h2>
+            <section aria-labelledby="year1-header">
+                <h2 id="year1-header">Jaar 1</h2>
                 <p>
                     Tijdens het eerste leerjaar beginnen we met een intrudoctie van het vak.
                     We krijgen met alle aspecten een beetje te maken zodat we in jaar 3 kunnen
@@ -48,34 +52,34 @@
                 </p>
             </section>
 
-            <div class="row">
-            <section class="col-12 colored-box">
-                <h3>Voortgang</h3>
-                <p>
-                    Tijdens de studie kun je studiepunten (European Credits (ec)).
-                    Dit is mijn voortgang binnen het huidige jaar.
-                    Je krijgt een NBSA (Negatief Bindend StudieAdvies) als je minder dan 45 punten haalt.
-                    Als je NBSA hebt mag je niet verder de opleiding. In deze grafiek zie je:
-                    Mijn behaalde studiepunten <span class="primairy-colored">&#9632;</span>, 
-                    de NBSA-lijn (45 punten) <span class="secondairy-colored">&#9632;</span>
-                    en de propedeuse-lijn (60 punten) <span class="tertairy-colored">&#9632;</span>.
-                </p>
+            <div class="collumned">
+                <section class="colored-box">
+                    <h3>Voortgang</h3>
+                    <p>
+                        Tijdens de studie kun je studiepunten (European Credits (ec)).
+                        Dit is mijn voortgang binnen het huidige jaar.
+                        Je krijgt een NBSA (Negatief Bindend StudieAdvies) als je minder dan 45 punten haalt.
+                        Als je NBSA hebt mag je niet verder de opleiding. In deze grafiek zie je:
+                        Mijn behaalde studiepunten <span class="primairy-colored">&#9632;</span>, 
+                        de NBSA-lijn (45 punten) <span class="secondairy-colored">&#9632;</span>
+                        en de propedeuse-lijn (60 punten) <span class="tertairy-colored">&#9632;</span>.
+                    </p>
 
-                <div class="progress">
-                    <div class="maximum" style="width: calc(60 / 60 * 100%);"></div>
-                    <div class="minimum" style="width: calc(45 / 60 * 100%);"></div>
-                    <div class="completed" style="width: calc(0 / 60 * 100%);"></div>
-                </div>
+                    <div class="progress">
+                        <div class="maximum" style="width: calc(60 / 60 * 100%);"></div>
+                        <div class="minimum" style="width: calc(45 / 60 * 100%);"></div>
+                        <div class="completed" style="width: calc(0 / 60 * 100%);"></div>
+                    </div>
 
-                <p>
-                    Voor meer details: 
-                    <a href="./resultaten-jaar-1.html">klik hier</a>
-                </p>
-            </section>
-        </div>
+                    <p>
+                        Voor meer details: 
+                        <a href="./resultaten-jaar-1.html">klik hier</a>
+                    </p>
+                </section>
+            </div>
             
-            <div class="row">
-                <section class="col-6 colored-box">
+            <div class="collumned equal-spaced">
+                <section class="colored-box">
                     <h3>Kwartaal 1</h3>
                     <p>
                         De absolute basis komt in de periode genaamd: 'Computer Science'. Tijdens
@@ -128,7 +132,7 @@
                     </table>
                 </section>
 
-                <section class="col-6 colored-box">
+                <section class="colored-box">
                     <h3>Kwartaal 2</h3>
                     <p>
                         De twee periode gaan we aan de slag met 'Game Development' en 'Object Geörienteerd'
@@ -163,8 +167,8 @@
                 </section>
             </div>
 
-            <div class="row">
-                <section class="col-6 colored-box">
+            <div class="collumned equal-spaced">
+                <section class="colored-box">
                     <h3>Kwartaal 3</h3>
                     <p>
                         De derde periode is de eerste periode dat we het gaan hebben over
@@ -205,7 +209,7 @@
                     </table>
                 </section>
 
-                <section class="col-6 colored-box">
+                <section class="colored-box">
                     <h3>Kwartaal 4</h3>
                     <p>
                         De vierde en laatste periode van het eerste jaar is gebaseerd rond een project.
@@ -253,8 +257,8 @@
             </div>
         </main>
         
-        <aside>
-            <section class="left">
+        <aside class="collumned">
+            <section>
                 <h2>Persoonlijke Links</h2>
                 <ul>
                     <li><a href="https://www.minecraft.net/nl-nl" target="_blank" rel="noopener">Minecraft</a></li>
@@ -266,7 +270,7 @@
                 </ul>
             </section>
 
-            <section class="right">
+            <section>
                 <h2>Studie Links</h2>
                 <ul>
                     <li>
@@ -297,7 +301,10 @@
 
         <footer>
             <a href="https://hz.nl/">
-                <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Hogeschool Zeeland">
+                <figure name="Logo Hogeschool Zeeland">
+                    <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Logo Hogeschool Zeeland" width="200" height="75">
+                    <figcaption>Het logo van de Hogeschool Zeeland</figcaption>
+                </figure>
             </a>
         </footer>
     </body>
