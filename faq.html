@@ -4,19 +4,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wesley van Schaijk - Veelgestelde Vragen</title>
+        <meta name="description" content="Soms weet je niet meer hoe het leven werkt, dit is een lijstje dat mij helpt in deze situatie.">
 
-        <link rel="stylesheet" href="./resources/css/main.css">
+        <title>Veelgestelde Vragen - Wesley van Schaijk</title>
+
+        <link rel="stylesheet" href="./resources/css/style.css">
+        <script src="https://kit.fontawesome.com/403fce4613.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <nav>
+            <button type="button" id="show-nav-button">Toon navigatie</button> 
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./profile.html">Persoonlijk Profiel</a></li>
-                <li><a href="./dashboard/">Studie Dashboard</a></li>
-                <li><a href="./faq.html" class="active">Veelgestelde Vragen</a></li>
-                <li><a href="./blog/">Blog</a></li>
+                <li><a href="./"><i class="fa-solid fa-house-user"></i> Home</a></li>
+                <li><a href="./profile.html"><i class="fa-solid fa-user"></i> Persoonlijk Profiel</a></li>
+                <li><a href="./dashboard"><i class="fa-solid fa-gauge"></i> Studie Dashboard</a></li>
+                <li><a href="./faq.html"><i class="fa-solid fa-question"></i> Veelgestelde Vragen</a></li>
+                <li><a href="./blog"><i class="fa-brands fa-blogger"></i> Blog</a></li>
             </ul>
         </nav>
 
@@ -30,17 +34,17 @@
             </p>
         </header>
 
-        <main class="row">
-            <section class="col-6">
-                <h2>Persoonlijke Vragen</h2>
+        <main class="collumned equal-spaced">
+            <section aria-labelledby="personal-question-heading" class="full-width">
+                <h2 id="personal-question-heading">Persoonlijke Vragen</h2>
                 <article class="colored-box">
                     <h3>Wat is je favoriete Minecraft versie?</h3>
                     <p>Versie 1.17. Toen kon je nog fatsoenlijk diamonds vinden.</p>
                 </article>
             </section>
 
-            <section class="col-6">
-                <h2>Studie Vragen</h2>
+            <section aria-labelledby="study-question-heading" class="full-width">
+                <h2 id="study-question-heading">Studie Vragen</h2>
                 <article class="colored-box">
                     <h3>Hoe kan je iets uitprinten vanaf je laptop op school?</h3>
                     <p>
@@ -82,8 +86,8 @@
             </section>
         </main>
 
-        <aside>
-            <section class="left">
+        <aside class="collumned">
+            <section>
                 <h2>Persoonlijke Links</h2>
                 <ul>
                     <li><a href="https://www.minecraft.net/nl-nl" target="_blank" rel="noopener">Minecraft</a></li>
@@ -95,7 +99,7 @@
                 </ul>
             </section>
 
-            <section class="right">
+            <section>
                 <h2>Studie Links</h2>
                 <ul>
                     <li>
@@ -125,9 +129,14 @@
         </aside>
 
         <footer>
-            <a href="https://hz.nl/">
-                <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Hogeschool Zeeland">
+            <a href="https://hz.nl/" target="_blank" rel="noopener">
+                <figure name="Logo Hogeschool Zeeland">
+                    <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Logo Hogeschool Zeeland" width="200" height="75">
+                    <figcaption>Het logo van de Hogeschool Zeeland</figcaption>
+                </figure>
             </a>
         </footer>
+
+        <script src="./resources/js/actions.js"></script>
     </body>
 </html>

@@ -4,19 +4,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wesley van Schaijk - Studie Dashboard - Jaar 1</title>
+        <meta name="description" content="Sommige mensen willen weten hoe goed het gaat op school, alsjeblieft.">
 
-        <link rel="stylesheet" href="../resources/css/main.css">
+        <title>Jaar 1 - Studie Dashboard - Wesley van Schaijk</title>
+
+        <link rel="stylesheet" href="../resources/css/style.css">
+        <script src="https://kit.fontawesome.com/403fce4613.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <nav>
+            <button type="button" id="show-nav-button">Toon navigatie</button> 
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../profile.html">Persoonlijk Profiel</a></li>
-                <li><a href="./" class="active">Studie Dashboard</a></li>
-                <li><a href="../faq.html">Veelgestelde Vragen</a></li>
-                <li><a href="../blog/">Blog</a></li>
+                <li><a href="../"><i class="fa-solid fa-house-user"></i> Home</a></li>
+                <li><a href="../profile.html"><i class="fa-solid fa-user"></i> Persoonlijk Profiel</a></li>
+                <li><a href="./dashboard"><i class="fa-solid fa-gauge"></i> Studie Dashboard</a></li>
+                <li><a href="../faq.html"><i class="fa-solid fa-question"></i> Veelgestelde Vragen</a></li>
+                <li><a href="../blog"><i class="fa-brands fa-blogger"></i> Blog</a></li>
             </ul>
         </nav>
 
@@ -183,8 +187,8 @@
             </table>
         </main>
         
-        <aside>
-            <section class="left">
+        <aside class="collumned">
+            <section>
                 <h2>Persoonlijke Links</h2>
                 <ul>
                     <li><a href="https://www.minecraft.net/nl-nl" target="_blank" rel="noopener">Minecraft</a></li>
@@ -196,7 +200,7 @@
                 </ul>
             </section>
 
-            <section class="right">
+            <section>
                 <h2>Studie Links</h2>
                 <ul>
                     <li>
@@ -227,8 +231,13 @@
 
         <footer>
             <a href="https://hz.nl/">
-                <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Hogeschool Zeeland">
+                <figure name="Logo Hogeschool Zeeland">
+                    <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Logo Hogeschool Zeeland" width="200" height="75">
+                    <figcaption>Het logo van de Hogeschool Zeeland</figcaption>
+                </figure>
             </a>
         </footer>
+
+        <script src="../resources/js/actions.js"></script>
     </body>
 </html>

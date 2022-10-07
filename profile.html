@@ -4,20 +4,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Wie is Wesley van Schaijk? Dat is de vraag die op deze pagina wordt beantwoord.">
 
-        <title>Wesley van Schaijk - Profiel</title>
+        <title>Profiel - Wesley van Schaijk</title>
 
-        <link rel="stylesheet" href="./resources/css/main.css">
+        <link rel="stylesheet" href="./resources/css/style.css">
+        <script src="https://kit.fontawesome.com/403fce4613.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <nav>
+            <button type="button" id="show-nav-button">Toon navigatie</button> 
             <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="./profile.html" class="active">Persoonlijk Profiel</a></li>
-                <li><a href="./dashboard">Studie Dashboard</a></li>
-                <li><a href="./faq.html">Veelgestelde Vragen</a></li>
-                <li><a href="./blog">Blog</a></li>
+                <li><a href="./"><i class="fa-solid fa-house-user"></i> Home</a></li>
+                <li><a href="./profile.html"><i class="fa-solid fa-user"></i> Persoonlijk Profiel</a></li>
+                <li><a href="./dashboard"><i class="fa-solid fa-gauge"></i> Studie Dashboard</a></li>
+                <li><a href="./faq.html"><i class="fa-solid fa-question"></i> Veelgestelde Vragen</a></li>
+                <li><a href="./blog"><i class="fa-brands fa-blogger"></i> Blog</a></li>
             </ul>
         </nav>
 
@@ -35,8 +38,8 @@
         </header>
 
         <main>
-            <section class="row">
-                <div class="col-6 colored-box">
+            <section aria-label="personal-experience collumned">
+                <div class="colored-box">
                     <h2>Studies</h2>
                     <p>
                         Op de middelbare school ben ik op het vmbo begonnen in de richting Toerisme, Recreatie en Sport (ISDC).
@@ -53,7 +56,7 @@
                         Nu ben ik begonnen aan de Hogeschool Zeeland en ben ik terug bij mijn orginele vakgebied.
                     </p>
                 </div>
-                <div class="col-6 colored-box">
+                <div class="colored-box">
                     <h2>Werkervaring</h2>
                     
                     <p>
@@ -75,22 +78,20 @@
                 </div>
             </section>
             
-            <section>
-                <h2>Persoonlijkheid</h2>
-                <div class="row">
-                    <div class="col-7">
-                        <iframe 
-                            width="100%" 
-                            height="100%" 
-                            src="https://www.youtube.com/embed/Ue6d5fKQt-c" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+            <section aria-labelledby="personality-heading">
+                <h2 id="personality-heading">Persoonlijkheid</h2>
+                <div class="collumned">
+                    <iframe 
+                        width="60%" 
+                        height="500vh" 
+                        src="https://www.youtube.com/embed/Ue6d5fKQt-c" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allowfullscreen>
+                    </iframe>
                     
-                    <div class="col-5">
+                    
+                    <div>
                         <p>Mijn persoonlijkheid is opgebouwd uit de volgende kenmerken</p>
                         <ul>
                             <li>Creatief</li>
@@ -102,13 +103,20 @@
                             <li>Doorzettend</li>
                             <li>Leergierig</li>
                         </ul>
+
+                        <p class="sr-only" name="transcript-video">
+                            De video is het resultaat van een opdracht uit een wedstrijd van werk. We moesten
+                            in tommy-teleshoping stijl een uitleg geven over een hygiëne onderwerp. In het geval
+                            van de video: het schoonmaken van de boenmachine. De video legt uit hoe deze wordt
+                            schoongemaakt met een komische tint.
+                        </p>
                     </div>
                 </div>
             </section>
         </main>
         
-        <aside>
-            <section class="left">
+        <aside class="collumned">
+            <section>
                 <h2>Persoonlijke Links</h2>
                 <ul>
                     <li><a href="https://www.minecraft.net/nl-nl" target="_blank" rel="noopener">Minecraft</a></li>
@@ -150,9 +158,14 @@
         </aside>
 
         <footer>
-            <a href="https://hz.nl/">
-                <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Hogeschool Zeeland">
+            <a href="https://hz.nl/" target="_blank" rel="noopener">
+                <figure name="Logo Hogeschool Zeeland">
+                    <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Logo Hogeschool Zeeland" width="200" height="75">
+                    <figcaption>Het logo van de Hogeschool Zeeland</figcaption>
+                </figure>
             </a>
         </footer>
+
+        <script src="./resources/js/actions.js"></script>
     </body>
 </html>

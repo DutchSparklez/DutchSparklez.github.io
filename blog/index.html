@@ -4,20 +4,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wesley van Schaijk - Blog</title>
+        <meta name="description" content="Soms heb je meer dan twitter nodig om je gevoelens kwijt te kunnen, dit is mijn domein.">
 
-        <link rel="stylesheet" href="../resources/css/main.css">
-        <link rel="stylesheet" href="../resources/css/posts.css">
+        <title>Blog - Wesley van Schaijk</title>
+
+        <link rel="stylesheet" href="../resources/css/style.css">
+        <script src="https://kit.fontawesome.com/403fce4613.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <nav>
+            <button type="button" id="show-nav-button">Toon navigatie</button> 
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../profile.html">Persoonlijk Profiel</a></li>
-                <li><a href="../dashboard/">Studie Dashboard</a></li>
-                <li><a href="../faq.html">Veelgestelde Vragen</a></li>
-                <li><a href="./" class="active">Blog</a></li>
+                <li><a href="../"><i class="fa-solid fa-house-user"></i> Home</a></li>
+                <li><a href="../profile.html"><i class="fa-solid fa-user"></i> Persoonlijk Profiel</a></li>
+                <li><a href="./dashboard"><i class="fa-solid fa-gauge"></i> Studie Dashboard</a></li>
+                <li><a href="../faq.html"><i class="fa-solid fa-question"></i> Veelgestelde Vragen</a></li>
+                <li><a href="../blog"><i class="fa-brands fa-blogger"></i> Blog</a></li>
             </ul>
         </nav>
         
@@ -33,7 +36,7 @@
         <main>
             <section>
                 <h2>Voorgestelde Posts</h2>
-                <table class="post-table">
+                <table class="colored-box">
                     <tbody>
                         <tr>
                             <td>
@@ -55,14 +58,14 @@
                         <tr>
                             <td>
                                 <a href="./online-company-safari.html">
-                                    <button type="button" name="verder-lezen">Verder lezen...</button>
+                                    <button type="button" name="verder-lezen">Verder lezen</button>
                                 </a>
                             </td>
                         </tr>
                     </tbody>
                 </table>
 
-                <table class="post-table">
+                <table class="colored-box">
                     <tbody>
                         <tr>
                             <td>
@@ -84,7 +87,7 @@
                         <tr>
                             <td>
                                 <a href="./het-begin-van-mijn-studie.html">
-                                    <button type="button" name="verder-lezen">Verder lezen...</button>
+                                    <button type="button" name="verder-lezen">Verder lezen</button>
                                 </a>
                             </td>
                         </tr>
@@ -93,8 +96,8 @@
             </section>
         </main>
 
-        <aside>
-            <section class="left">
+        <aside class="collumned">
+            <section>
                 <h2>Persoonlijke Links</h2>
                 <ul>
                     <li><a href="https://www.minecraft.net/nl-nl" target="_blank" rel="noopener">Minecraft</a></li>
@@ -106,7 +109,7 @@
                 </ul>
             </section>
 
-            <section class="right">
+            <section>
                 <h2>Studie Links</h2>
                 <ul>
                     <li>
@@ -137,8 +140,13 @@
 
         <footer>
             <a href="https://hz.nl/">
-                <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Hogeschool Zeeland">
+                <figure name="Logo Hogeschool Zeeland">
+                    <img src="https://hz.nl/assets/svg/hz-logo.svg" alt="Logo Hogeschool Zeeland" width="200" height="75">
+                    <figcaption>Het logo van de Hogeschool Zeeland</figcaption>
+                </figure>
             </a>
         </footer>
+
+        <script src="../resources/js/actions.js"></script>
     </body>
 </html>

@@ -157,6 +157,18 @@ aside section ul {
   padding: 0;
 }
 
+/* Overview Table */
+.overview-table {
+  margin: 0 auto;
+}
+
+.overview-table td,
+.overview-table th {
+  padding: 0.5rem;
+  padding-left: 1rem;
+  text-align: left;
+}
+
 /* Customs */
 .collumned {
   display: flex;
@@ -183,13 +195,16 @@ aside section ul {
   border: 1px solid var(--text-color);
 }
 
-.spreadable-table {
+.spreadable-table,
+.overview-table {
   border: 2px solid var(--text-color);
   border-collapse: collapse;
 }
 
 .spreadable-table td,
-.spreadable-table th {
+.spreadable-table th,
+.overview-table td,
+.overview-table th {
   border: 1px solid var(--text-color);
   padding: 1vw;
 }
@@ -250,6 +265,36 @@ aside section ul {
 
 .tertairy-colored {
   color: var(--tertairy-color);
+}
+
+/* Single Post */
+.post-introduction {
+  font-style: italic;
+}
+
+.post-subtitle {
+  margin: 0;
+}
+
+.post h2 {
+  text-align: left;
+}
+
+.post h3 {
+  margin-bottom: 1rem;
+}
+
+.post th {
+  padding: 1rem 0;
+}
+
+.post td {
+  padding: 1rem;
+}
+
+.post .qoute {
+  font-style: italic;
+  font-size: small;
 }
 
 /* Selectors */
